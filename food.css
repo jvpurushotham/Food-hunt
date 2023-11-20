@@ -1,0 +1,330 @@
+* {
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    /* text-decoration: none; */
+    transition: all 0.2s linear;
+    text-transform: capitalize;
+
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+pre {
+    font-size: 20px;
+}
+.yes {
+    font-size: 20px;
+}
+/* p {
+    font-size: 40px;
+} */
+:root {
+    --orange: #f7f91f;
+    --text-color-1: #444;
+    --bg-color-2: #666;
+    --text-color-1: #fff;
+    --bg-color-2: #eee;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0,1);
+}
+body {
+    background: va(--bg-color-2);
+    box-sizing: border-box;
+}
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--text-color-1);
+    font-size: 4rem;
+}
+.heading span {
+    position: relative;
+    z-index: 0;
+}
+.heading span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background: var(--orange);
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
+}
+a {
+    text-decoration: none;
+}
+section {
+    padding: 2rem 7%;
+}
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 7rem;
+    background: #fff;
+}
+image {
+    flex: 1 1 45rem;
+}
+.home .image {
+    flex: 1 1 45rem;
+}
+.home .image img{
+    width:100%;
+}
+.home .content {
+    flex: 1 1 45rem;
+}
+.home .content p{
+    color: var(--text-color-2);
+    font-size: 1.7rem;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #d79b33;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.btn:hover {
+    letter-spacing: 0.2rem;
+}
+.form-container form {
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+.vorm-container form .inputBox {
+    flex: 1 1 23rem;
+}
+.form-container form .inputBox span {
+    font-size: 1.7rem;
+    color: var(--text-color-2);
+}
+.form-container form .inputBox input {
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-2);
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    text-transform: none;
+    width: 100%;
+    padding: 1rem;
+}
+.form-container form .btn {
+    flex: 1 1 23rem;
+    margin-top: 25px;
+}
+.packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem; 
+}
+.packages .box-container .box {
+    background: var(--bg-color-1);
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem;
+}
+.packages .box-container .box .image {
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+}
+.packages .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.packages .box .image h3 {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: rgba(0,0,0,0,5);
+    border-radius: 0.5rem;
+    font-weight: lighter;
+    padding: 0.5rem 1.5rem;
+}
+.packages .box .image h3 i {
+    color: var(--orange);
+}
+.packages .box-container .box .price {
+    font-weight: 600;
+    color: var(--text-color-1);
+    font-size: 2.5rem;
+}
+.packages .box-container .content {
+    padding: 1.5rem;
+    padding-top: 0;
+}
+.packages .box-container .box .price span {
+    font-weight: lighter;
+    color: var(--text-color-2);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.packages .box-container .box .content {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    color: var(--text-color-2);
+    line-height: 1.7;
+}
+.pricing .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    font-size: 20px;
+}
+.pricing .box-coontainer .box {
+    background: var(--bg-color-1);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    text-align: center;
+}
+/* .pricing .box-container .box h3 {
+    padding: 1rem;
+    background: 1rem;
+    border-radius: 0.5rem;
+    font-size: 5rem;
+    color: var(--text-color-1);
+} */
+li {
+    list-style: none;
+}
+.pricing .box .container .box .price {
+    padding-top: 2rem;
+}
+.pricing .box .container .box .price span {
+    font-size: 2rem;
+    color: var(--text-color-2);
+}
+.pricing .box .container .box .price .amount {
+    font-size: 50rem;
+    color: var(--text-color-1);
+    font-weight: bolder;   
+}
+.pricing .box ul {
+    padding: 0.5rem;
+}
+.pricing .box ul li {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--text-color-2);
+} 
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.contact form .inputBox input,
+.contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    margin: 0.7rem 0;
+    background-color: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    text-transform: none;
+}
+.contact form textarea {
+    height: 20rem;
+    resize: none;
+}
+.contact form .inputBox input {
+    width: 49%;
+}
+input {
+    caret-color: cyan;
+    color: black;
+    display: inline-block;
+}
+a {
+    color: #164837;
+    font-size: 20px;
+    font-weight: 1000;
+}
+.menu-bar {
+    background: rgb(246, 217, 112);
+    text-align: center;
+}
+.menu-bar ul  {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li {
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+}
+.active, .menu-bar ul li:hover {
+    background: #eff3ee;
+    border-radius: 3px;
+}
+i {
+    padding: 5px;
+}
+.sub-menu-1 {
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(246, 217, 112);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+.rating-box {
+    text-align: center;
+    font-size: 40px;
+    background: linear-gradient(45deg, #ffd195, #ffb2ff);
+    position: relative;
+    padding: 25px 50px 35px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+.rating-box .stars{
+    gap: 25px;
+}
+.stars i {
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.stars i.active {
+    color: #ff9c1a;
+
+}
